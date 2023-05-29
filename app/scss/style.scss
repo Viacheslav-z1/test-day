@@ -5,7 +5,101 @@
 
 
 
+.header {
 
+  padding: 33px 0;
+		&__inner {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+		}
+
+		&__links {
+      display: flex;
+      align-items: center;
+      gap: 73px;
+		}
+
+		&__links-item {
+       width: 25px;
+      height: 25px;
+		}
+
+		&__links-img {
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+		}
+}
+
+.menu {
+
+		&__list {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+		}
+
+		&__item {
+		}
+
+		&__link {
+      color: #0F0F0F;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 17px;
+		}
+}
+.logo-link {
+  width: 120px;
+  height: 105px;
+  margin-right: auto;
+  margin-left: 150px;
+}
+.logo {
+
+		&__img {
+      width: 120px;
+      height: 105px;
+		}
+}
+
+
+
+
+
+.top {
+
+		&__inner {
+      display: flex;
+      gap: 93px;
+      align-items: center;
+		}
+
+		&__info {
+      max-width: 728px;
+      width: 100%;
+
+		}
+
+		&__title {
+      font-weight: 900;
+      font-size: 96px;
+      line-height: 96px;
+      margin-bottom: 22px;
+		}
+
+		&__descr {
+		}
+
+		&__link {
+		}
+
+		&__slider {
+		}
+}
 
 
 
