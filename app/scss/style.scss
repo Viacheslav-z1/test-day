@@ -89,15 +89,40 @@
       font-size: 96px;
       line-height: 96px;
       margin-bottom: 22px;
+      text-transform: uppercase;
+      font-family: 'Montserrat-Black', sans-serif;
+      font-weight: 900;
 		}
 
 		&__descr {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 60px;
+     letter-spacing: 0.07em;
+     font-family: 'Montserrat-Regular', sans-serif;
+      font-weight: 400;
 		}
 
 		&__link {
+      background-color: transparent;
+      border: 1px solid #0F0F0F;
+      text-transform: uppercase;
+      padding: 25px 90px;
+      color: #0F0F0F;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #0F0F0F;
+      font-family: 'Montserrat-Regular', sans-serif;
+      font-weight: 400;
 		}
 
 		&__slider {
+      max-width: 870px;
+      width: 100%;
+      background-color: #0F0F0F;
+      height: 700px;
 		}
 }
 
