@@ -5,6 +5,14 @@ body{
    font-size: 20px;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.none{
+  display: none !important;
+}
 .container{
   max-width: 1720px;
   padding: 0 10px;
