@@ -37,6 +37,8 @@ paginationItems.forEach(function (item) {
   });
 });
 
+
+
 /**tabs product*/
 
 
@@ -60,8 +62,6 @@ removeActiveTabs(tabsProduct);
 showTab(tabsContentProduct, 0, tabsProduct);
 
 
-
-
 /**Tab trends */
 
 tabsTrends.forEach((tab, i) => {
@@ -79,9 +79,7 @@ removeActiveTabs(tabsTrends);
 showTab(tabsContentTrends, 0, tabsTrends);
 
 
-
-
-
+/**Functions tabs */
 function hideTabsContent(arr) {
   arr.forEach((tab) => {
     tab.classList.add("none");
@@ -101,8 +99,6 @@ function removeActiveTabs(tabs) {
 }
 
 
-
-
 /**smooth scroll */
 const anchors = document.querySelectorAll('a[href*="#"]');
 
@@ -118,3 +114,5 @@ for (let anchor of anchors) {
     });
   });
 }
+
+
