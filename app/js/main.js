@@ -27,6 +27,16 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+var paginationItems = document.querySelectorAll(
+  ".custom-pagination span"
+);
+paginationItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    var slideIndex = parseInt(this.getAttribute("data-slide-index"));
+    swiper.slideTo(slideIndex);
+  });
+});
+
 /**tabs product*/
 
 
@@ -87,5 +97,24 @@ function showTab(arr,index, tabs) {
 function removeActiveTabs(tabs) {
   tabs.forEach(tab => {
     tab.classList.remove('active')
+  });
+}
+
+
+
+
+/**smooth scroll */
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute("href").substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   });
 }

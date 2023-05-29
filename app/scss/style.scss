@@ -99,10 +99,8 @@
   }
 
   &__slider {
-    background-image: url("../images/dist/slider-decor.svg");
-    background-position: center left;
-    background-size: contain;
-    background-repeat: no-repeat;
+ position: relative;
+   
   }
 
   &__slider-img{
@@ -686,6 +684,12 @@
     font-size: 16px;
     line-height: 40px;
     color: rgba(255, 255, 255, 0.75);
+    border-bottom: 2px solid transparent;
+    transition: all .5s;
+
+    &:hover{
+      border-bottom: 2px solid #fff;
+    }
   }
 
   &__social-box {
@@ -744,8 +748,7 @@
     line-height: 1.5rem;
   }
 
-  &__root {
-  }
+
 
   &__politic {
     border-bottom: 2px dashed rgba(255, 255, 255, 0.25);
@@ -778,18 +781,24 @@
 
 
 .swiper{
-  width: 900px;
+  width: 750px;
+     background-image: url("../images/dist/slider-decor.svg");
+    background-position: center left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 
 .swiper-pagination {
 
   display: flex;
   flex-direction: column;
-  top: 70%;
-  right: 30px;
+  bottom: 100px;
+  right: 0px;
   left: auto;
   width: 100px;
   text-align: right;
+  z-index: 999;
   span {
     margin-bottom: 20px;
     font-size: 30px;
