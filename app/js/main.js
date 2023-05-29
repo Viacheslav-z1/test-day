@@ -10,6 +10,20 @@ const swiper = new Swiper(".swiper", {
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    type: "custom",
+    clickable: true, // Делает пагинацию кликабельной
+     renderCustom: function (swiper, current, total) {
+      var paginationHtml = ''; // Инициализируем переменную для хранения HTML пагинации
+
+      for (var i = 0; i < total; i++) {
+        // Создаем HTML-код для каждого номера слайда
+        var slideNumber = (i + 1).toString().padStart(2, '0'); // Добавляем ведущий ноль перед числами
+        var activeClass = current === (i+1) ? 'active' : ''; // Добавляем класс "active" для текущего слайда
+        paginationHtml += '<span class="' + activeClass + '">' + slideNumber + '</span>';
+      }
+
+      return paginationHtml; // Возвращаем HTML-код пагинации
+    },
   },
 });
 
